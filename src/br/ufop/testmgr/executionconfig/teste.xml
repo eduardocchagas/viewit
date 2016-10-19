@@ -1,0 +1,49 @@
+<testSuite description="testeUfop"
+	harPath="src\harRepository\teste">
+
+	<navigating stepID="1"
+		pageURL="http://yawdemo-jsf2gae.appspot.com/listaMercadorias.jsf"
+		description="Abrir Página" />
+
+	<clicking stepID="2" description="incluir">
+		<locator by="ByXPath">
+			<value>/html/body/div[2]/div/div[1]/ul/li[3]/a</value>
+		</locator>
+	</clicking>
+	
+	<typing stepID="3" description="Especificar nome">
+		<locator by="ByXPath">
+			<value>//*[@id="j_idt31"]/fieldset/div[1]/div/input</value>
+		</locator>
+		<key>Nome1</key>
+	</typing>
+	
+	<typing stepID="4" description="Especificar descrição">
+		<locator by="ByXPath">
+			<value>//*[@id="j_idt31"]/fieldset/div[2]/div/input</value>
+		</locator>
+		<key>Descrição</key>
+	</typing>
+	
+	<typing stepID="5" description="Especificar quantidade">
+		<locator by="ByXPath">
+			<value>//*[@id="j_idt31"]/fieldset/div[3]/div/input</value>
+		</locator>
+		<key>10</key>
+	</typing>
+	
+	<typing stepID="6" description="Especificar quantidade">
+		<locator by="ByXPath">
+			<value>//*[@id="j_idt31"]/fieldset/div[4]/div/input</value>
+		</locator>
+		<key>20.30</key>
+	</typing>
+	
+	
+	<clicking stepID="7" description="salvar">
+		<locator by="ByXPath">
+			<value>//*[@id="j_idt31"]/div/div/input[1]</value>
+		</locator>
+	</clicking>
+
+</testSuite>

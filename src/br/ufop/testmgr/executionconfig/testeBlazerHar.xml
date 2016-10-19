@@ -1,0 +1,7 @@
+<defaultHarDirectory path="src/harRepository/testeBlaze"
+	csvFileName ="blaze.csv">
+		<pageName>Search</pageName>
+		<pageName>Choose City</pageName>
+		<pageName>Form</pageName>
+		<pageName>Confirm</pageName>
+</defaultHarDirectory>

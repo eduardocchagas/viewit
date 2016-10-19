@@ -1,0 +1,99 @@
+<testSuite description="testeBlaze"
+	harPath="src\harRepository\testeBlaze8">
+
+	<navigating stepID="01"
+		pageURL="http://blazedemo.com"
+		description="Abrir Página" 
+	/>
+	
+	
+	<selectingOption stepID="02" description="selecionarOrigem">
+		<locatorCheckBoxes by="ByXPath">
+			<value>/html/body/div[3]/form/select[1]</value>
+		</locatorCheckBoxes>
+		
+		<selectedElement_visibleText>Boston</selectedElement_visibleText>
+	</selectingOption>
+	
+	<selectingOption stepID="03" description="selecionarDestino">
+		<locatorCheckBoxes by="ByXPath">
+			<value>/html/body/div[3]/form/select[2]</value>
+		</locatorCheckBoxes>
+		<selectedElement_visibleText>Berlin</selectedElement_visibleText>
+	</selectingOption>
+	
+	<clicking stepID="04" description="buscarVoos">
+		<locator by="ByXPath">
+			<value>/html/body/div[3]/form/div/input</value>
+		</locator>
+	</clicking>
+	
+	<clicking stepID="05" description="selecionarVoo">
+		<locator by="ByXPath">
+			<value>/html/body/div[2]/table/tbody/tr[4]/td[1]/input</value>
+		</locator>
+	</clicking>
+	
+	<typing stepID="06" description="Especificar nome">
+		<locator by="ByXPath">
+			<value>//*[@id="inputName"]</value>
+		</locator>
+		<key>John Smith</key>
+	</typing>
+	
+	<typing stepID="07" description="Especificar endereco">
+		<locator by="ByXPath">
+			<value>//*[@id="address"]</value>
+		</locator>
+		<key>123 E Mulholand Drive</key>
+	</typing>
+	
+	<typing stepID="08" description="Especificar cidade">
+		<locator by="ByXPath">
+			<value>//*[@id="city"]</value>
+		</locator>
+		<key>Los Angeles</key>
+	</typing>
+	
+	<typing stepID="09" description="Especificar estado">
+		<locator by="ByXPath">
+			<value>//*[@id="state"]</value>
+		</locator>
+		<key>California</key>
+	</typing>
+	
+	<typing stepID="10" description="Especificar codigo postal">
+		<locator by="ByXPath">
+			<value>//*[@id="zipCode"]</value>
+		</locator>
+		<key>123123</key>
+	</typing>
+	
+	<selectingOption stepID="11" description="selecionar cartao">
+		<locatorCheckBoxes by="ByXPath">
+			<value>//*[@id="cardType"]</value>
+		</locatorCheckBoxes>
+		<selectedElement_visibleText>American Express</selectedElement_visibleText>
+	</selectingOption>
+	
+	<typing stepID="12" description="Especificar numero cartao">
+		<locator by="ByXPath">
+			<value>//*[@id="creditCardNumber"]</value>
+		</locator>
+		<key>2442-4343-2546</key>
+	</typing>
+	
+	<typing stepID="13" description="Especificar nome no cartao">
+		<locator by="ByXPath">
+			<value>//*[@id="nameOnCard"]</value>
+		</locator>
+		<key>John Smith</key>
+	</typing>
+	
+	<clicking stepID="14" description="selecionarVoo">
+		<locator by="ByXPath">
+			<value>/html/body/div[2]/form/div[9]/div/input</value>
+		</locator>
+	</clicking>
+	
+</testSuite>

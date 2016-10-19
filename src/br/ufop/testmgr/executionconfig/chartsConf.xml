@@ -1,0 +1,32 @@
+<chartSuite csvPath="ufop4.csv" chartFolder="src\ChartsDir">
+	
+	<pieChart title="pie1" pageName="ALL">
+		<type>resource</type>
+		<information>quantity</information>
+	</pieChart>
+	
+	<boxPlotChart title="boxPlotTeste3">
+		<pages>
+			<pageName>Home</pageName>
+			<pageName>Home2</pageName>
+		</pages>
+		<dataViews>
+			<dataView>waiting</dataView>
+			<dataView>totalOfTimings</dataView>
+			<dataView>onLoad</dataView>
+		</dataViews>
+	</boxPlotChart>
+	 
+	<barChart title = "barChartTeste3">
+		<pages>
+	 		<pageName>Noticia</pageName>
+	 	</pages>
+	</barChart>
+	 
+	<lineChart title = "Time-HomeUFOP-Novo05-05_1">
+		<pages>
+			<pageName>Home</pageName>
+	 	</pages>
+	</lineChart>
+	 
+</chartSuite>

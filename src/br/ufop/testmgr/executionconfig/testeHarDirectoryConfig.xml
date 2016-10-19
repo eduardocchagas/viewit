@@ -1,0 +1,7 @@
+<defaultHarDirectory path="src/harRepository/testeUfop2015"
+	csvFileName ="ufop.csv">
+		<pageName>Home</pageName>
+		<pageName> Noticia </pageName>
+		<pageName> Home2</pageName>
+		
+</defaultHarDirectory>

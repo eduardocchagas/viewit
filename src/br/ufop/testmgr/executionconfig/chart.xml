@@ -1,0 +1,22 @@
+<chartSuite csvPath="testeHome000c.csv" chartFolder="src\">
+	<boxPlotChart title="boxPlotTesteHome000c">
+		<pages>
+			<pageName>Home</pageName>
+		</pages>
+		<dataViews>
+			<dataView>blocking</dataView>
+			<dataView>waiting</dataView>
+			<dataView>receiving</dataView>
+			<dataView>onContentLoad</dataView>
+			<dataView>totalOfTimings</dataView>
+			<dataView>onLoad</dataView>
+		</dataViews>
+	</boxPlotChart>
+	 
+	<lineChart title = "Times-Home000c">
+		<pages>
+			<pageName>Home</pageName>
+	 	</pages>
+	</lineChart>
+	 
+</chartSuite>

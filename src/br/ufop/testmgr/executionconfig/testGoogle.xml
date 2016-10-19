@@ -1,0 +1,26 @@
+<testSuite description="googleTeste"
+	harPath="src\harRepository\googleTest">
+
+	<navigating stepID="1"
+		pageURL="http://www.google.com.br"
+		description="Abrir Página" />
+
+	
+	<contextClicking stepID="2" description="ContextClick" name="58">
+		<locator by = "ByXPath">
+			<value>//*[@id="gbqfq"]</value>
+		</locator>
+	</contextClicking>
+	
+	<clicking stepID="3" description="OK">
+		<locator by="ByXPath">
+			<value>
+				//*[@id="gbqfb"]/span
+			</value>
+		</locator>
+	</clicking>
+	
+	<!-- informacoes sobre arquivos har que serao gerados (um para cada nova 
+		tela) -->
+
+</testSuite>

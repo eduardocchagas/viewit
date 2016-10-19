@@ -1,0 +1,21 @@
+<testSuite description="testSample" harPath = "harPath">
+	<navigating stepID="1" pageURL="http://localhost:8063/repository/access/login.jsf"/>
+		
+	<typing stepID ="2" XPathLocator= "typingPath" submit = "false" >
+		<key>entry</key>
+	</typing>
+	
+	<ckeckingBoxes stepID="3" XPathLocatorRadioForm = "pathBoxes" >
+		<selectedElements_visibleText>	//path		
+		</selectedElements_visibleText>
+	</ckeckingBoxes>
+	
+	<selectingOption stepID="4" XPathLocatorCheckBoxFor = "pathOption">
+		<selectedElement_visibleText>	//path		
+		</selectedElement_visibleText>
+	</selectingOption>
+	
+	<clicking stepID = "5" XPathLocator = "path"/>
+	
+	<submitting stepID = "5" XPathLocator = "path"/>
+</testSuite>

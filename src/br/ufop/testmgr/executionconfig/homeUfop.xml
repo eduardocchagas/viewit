@@ -1,0 +1,11 @@
+<testSuite description="testeUfop"
+	harPath="src\harRepository\testeHomeUfopNovo000">
+
+	<navigating stepID="01"
+		pageURL="http://www.ufop.br"
+		description="Abrir Página" 
+	/>
+	
+	
+	
+</testSuite>

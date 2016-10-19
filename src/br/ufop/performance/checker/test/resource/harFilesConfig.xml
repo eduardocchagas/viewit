@@ -1,0 +1,14 @@
+<executionScenario description="fleury_scenario1"
+	harPath="src/harRepository">
+	<!-- manter mesmos valores iniciais do harFilesConfig -->
+	<!--cada nova tela carregada, atraves da execucao dos passos de testes, 
+		dispara o processo responsavel por criar e salvar um novo arquivo har (e.g. 
+		tela de login, tela home...) -->
+
+	<harFileName>Login</harFileName>
+	<harFileName>Home</harFileName>
+	<harFileName> SearchResults</harFileName>
+	<harFileName> AssetDetails</harFileName>
+	<harFileName>Logout</harFileName>
+</executionScenario>
+

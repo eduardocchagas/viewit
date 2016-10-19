@@ -1,0 +1,65 @@
+<testSuite description="fleury_scenario1" harPath="src/harRepository/fleury_scenario1">
+	<navigating stepID="1"
+		pageURL="http://fleury.sensedia.com/repository/access/login.jsf"
+		description="Abrir Página" />
+
+	<typing stepID="2" description="Especificar Username">
+		<locator by="ByXPath">
+			<value>//*[@id=&quot;username&quot;]
+			</value>
+		</locator>
+		<key>system</key>
+	</typing>
+
+
+	<typing stepID="3" description="Especificar password">
+		<locator by="ByXPath">
+			<value>
+				//*[@id="password"]
+			</value>
+		</locator>
+		<key>manager</key>
+	</typing>
+
+	<clicking stepID="4" description="OK">
+		<locator by="ByXPath">
+			<value> //*[@id="submit"]</value>
+		</locator>
+	</clicking>
+	<typing stepID="5" description="Procurar Por Ativo - Tracker">
+		<locator by="ByXPath">
+			<value>//*[@id=&quot;userText&quot;]</value>
+		</locator>
+		<key>tracker</key>
+	</typing>
+
+	<clicking stepID="6" description="Clicar em Buscar Ativos">
+		<locator by="ByCssSelector">
+			<value>input[type="image"]
+			</value>
+		</locator>
+	</clicking>
+
+
+	<clicking stepID="7" description="Clicar em Ativo Tracker - Ver Detalhes">
+		<locator by="ByXPath">
+			<value>/html/body/div[3]/div/div/div/div[2]/div[2]/form/div/div/table/tbody/tr/td/div/div/a
+			</value>
+		</locator>
+	</clicking>
+
+
+	<clicking stepID="8" description="Sair (logout)">
+		<locator by="ByXPath">
+			<value>//*[@id=&quot;counterForm:logout&quot;]</value>
+		</locator>
+	</clicking>
+
+	<!-- informacoes sobre arquivos har que serao gerados (um para cada nova 
+		tela) -->
+		
+<!-- informacoes sobre diretorio onde serao armazenados os arquivos har gerados. -->
+	
+
+
+</testSuite>

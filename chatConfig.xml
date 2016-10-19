@@ -1,0 +1,23 @@
+<chartConfig csvPath="/src/csvPath/file.csv" chartPath="/src/chartFolder">
+	<pieChart>
+		<pageName>Home</pageName>
+		<chartName> HomePieChart</chartName>
+		<dataPlot>ContentInfoTiming</dataPlot><!-- Pode ser também  ContentInfoCount, EntryTimings...-->
+		<!-- Outros a serem definidos no refinamento de possibilidades de refianmento dos graficos -->
+	<pieChart>
+	
+	<barChart>
+		<!-- ... -->
+	</barChart>
+	
+	<lineChart>
+		<!-- ... -->
+	</lineChart>
+	
+	<pieChart>
+		<!-- ... -->
+	</pieChart>
+	
+	<!-- Outros graficos -->
+	
+</chartConfig>

@@ -1,0 +1,23 @@
+<testSuite description="testeUfop"
+	harPath="src\harRepository\testeUfop2015">
+
+	<navigating stepID="1"
+		pageURL="http://www.cead.ufop.br"
+		description="Abrir Página" />
+
+	<clicking stepID="2" description="OK">
+		<locator by="ByXPath">
+			<value>//*[@id="hor_nav"]/li[8]/a</value>
+		</locator>
+	</clicking>
+	
+	<clicking stepID="3" description="OK">
+		<locator by="ByXPath">
+			<value>//*[@id="container_inner"]/div[1]/div/a/img</value>
+		</locator>
+	</clicking>
+	
+	<!-- informacoes sobre arquivos har que serao gerados (um para cada nova 
+		tela) -->
+
+</testSuite>
